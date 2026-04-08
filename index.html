@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enlaces del ecosistema EspaKodi">
+    <title>Enlaces - EspaKodi</title>
+    <style>
+        :root {
+            --bg-color: #0a0e14;
+            --panel-bg: #121820;
+            --border-color: #242c38;
+            
+            --color-contact: #ffd700;
+            --color-web: #008000;
+            --color-repo: #3090ff;
+            --color-social: #2aabee;
+            
+            --text-url: #8b949e;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: #ffffff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .link-group {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .link-group:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .link-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            margin-bottom: 6px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .link-row:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            transform: translateX(4px);
+        }
+
+        .link-label {
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+        }
+
+        .link-url {
+            color: var(--text-url);
+            font-size: 14px;
+            font-family: monospace;
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
+
+        .link-row:hover .link-url {
+            opacity: 1;
+            color: #ffffff;
+        }
+
+        .color-contact { color: var(--color-contact); }
+        .color-web { color: var(--color-web); }
+        .color-repo { color: var(--color-repo); }
+        .color-social { color: var(--color-social); }
+        
+        @media (max-width: 480px) {
+            .link-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="link-group">
+            <a href="https://t.me/rubensdfa1laberot/?direct" target="_blank" class="link-row">
+                <span class="link-label color-contact">Contacto</span>
+                <span class="link-url">t.me/rubensdfa1laberot/?direct</span>
+            </a>
+            <a href="https://espatv.github.io/web" target="_blank" class="link-row">
+                <span class="link-label color-web">Web</span>
+                <span class="link-url">espatv.github.io/web</span>
+            </a>
+        </div>
+
+        <div class="link-group">
+            <a href="https://github.com/espatv" target="_blank" class="link-row">
+                <span class="link-label color-repo">EspaTV (Principal ES)</span>
+                <span class="link-url">github.com/espatv</span>
+            </a>
+            <a href="https://github.com/fullstackcurso" target="_blank" class="link-row">
+                <span class="link-label color-repo">FullStackCurso</span>
+                <span class="link-url">github.com/fullstackcurso</span>
+            </a>
+            <a href="https://github.com/espakodi" target="_blank" class="link-row">
+                <span class="link-label color-repo">EspaKodi (Respaldo ES)</span>
+                <span class="link-url">github.com/espakodi</span>
+            </a>
+            <a href="https://github.com/loioloio" target="_blank" class="link-row">
+                <span class="link-label color-repo">loioloio (Global)</span>
+                <span class="link-url">github.com/loioloio</span>
+            </a>
+        </div>
+
+        <div class="link-group">
+            <a href="https://t.me/espadaily" target="_blank" class="link-row">
+                <span class="link-label color-social">Canal de Telegram</span>
+                <span class="link-url">t.me/espadaily</span>
+            </a>
+            <a href="https://t.me/espakodi" target="_blank" class="link-row">
+                <span class="link-label color-social">Chat EspaKodi</span>
+                <span class="link-url">t.me/espakodi</span>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
